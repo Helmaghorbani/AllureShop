@@ -1,0 +1,518 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  
+ body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+
+  header {
+    background-color: #000;
+    padding: 20px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background-color: #303030;
+    padding: 10px 130px; 
+    border-radius: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    border: 3px solid #494949; 
+  }
+  
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #7d5efc;
+  }
+  
+  .cart-button a {
+    background-color: #7d5efc;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .cart-button a:hover {
+    background-color: #5639b5;
+  }
+  
+.signin-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .signin-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .btn.primary {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn.primary:hover {
+    background-color: #5a52e0;
+  }
+  
+  .signup-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .signup-link a {
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+
+.auth-container {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 15px; 
+    margin-right: 20px; 
+  }
+  
+  
+  .signin-btn, .cart-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c63ff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .signin-btn:hover, .cart-btn:hover {
+    background-color: #5a52e0;
+  }
+
+  /***/
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px; 
+}
+
+
+table {
+    width: 60%;
+    max-width: 450px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+
+th {
+    background-color: #4a4a4a;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 15px;
+}
+
+td.action-cell {
+    text-align: right;
+}
+
+
+#totalPrice {
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.continue-button button {
+    color: white;
+    background-color: #42556b;
+    margin-top: 30px; 
+    padding: 12px 30px;
+}
+
+.continue-button button:hover {
+    background-color: #2d4c68;
+    transform: scale(1.05); 
+}
+
+.action-button button {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+}
+
+
+table th:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+table th:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+  /**/
+
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+ 
+  .footer-terms {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-terms a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-terms a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+  }
+  
+  .footer-column h3 {
+    color: #8a4bff;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #8a4bff;
+  }
+  
+  /* Subscribe Form */
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .subscribe-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #8a4bff;
+    border-radius: 4px 0 0 4px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 15px;
+    background-color: #8a4bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #6f3ee9;
+  }
+  
+
+
+/***/
+@media (min-width: 1200px) {
+  .footer-columns {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer-columns {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-column {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 10px;
+  }
+  .footer-columns {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-column {
+    text-align: left;
+  }
+}
+
+/**/
+@media (min-width: 992px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .nav-links {
+    flex: 1;
+    justify-content: flex-end;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .auth-container {
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auth-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+}
+
+/**/
+@media (min-width: 601px) {
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  #total th, #total td {
+    padding: 12px;
+  }
+
+  #totalPrice {
+    font-size: 1.8rem;
+  }
+
+  .continue-button button {
+    padding: 12px 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .content-wrapper {
+    padding: 15px;
+  }
+
+  #total th, #total td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  #totalPrice {
+    font-size: 1.4rem;
+  }
+
+  .continue-button button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .content-wrapper {
+    padding: 10px;
+  }
+
+  #total th, #total td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  #totalPrice {
+    font-size: 1.2rem;
+  }
+
+  .continue-button button {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}
